@@ -24,7 +24,7 @@ public class SplashScreen extends Activity implements InMobiInterstitial.Interst
     private static int SPLASH_TIME_OUT = 5000;
 
     private InMobiInterstitial mInterstitialAd;
-    private final String IN_MOBI_ACCOUNT_ID = "";
+    public static final String IN_MOBI_ACCOUNT_ID = "1a6ef98086b04bc48b577c3d8953f678";
     private final long FULLPAGE_PLACEMENT_ID = 1554430036174L;
     private boolean adLoaded = false;
 

@@ -7,19 +7,20 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/button"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
-        android:text="Show Fullpage" />
+        android:text="Show Toast" />
 
 
     <com.inmobi.ads.InMobiBanner
         android:id="@+id/banner"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        ads:placementId="1431977751489005"
+        ads:placementId="plid-1554947133459"
         ads:refreshInterval="60" />
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.inmobi.ads"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,5 +11,15 @@
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:text="Show Fullpage" />
+
+
+    <com.inmobi.ads.InMobiBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        ads:placementId="1431977751489005"
+        ads:refreshInterval="60" />
 
 </RelativeLayout>

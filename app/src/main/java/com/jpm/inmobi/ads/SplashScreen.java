@@ -22,8 +22,10 @@ import java.util.Map;
 public class SplashScreen extends Activity implements InMobiInterstitial.InterstitialAdListener2 {
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 5000;
-    private InMobiInterstitial mInterstitialAd;
 
+    private InMobiInterstitial mInterstitialAd;
+    private final String IN_MOBI_ACCOUNT_ID = "";
+    private final long FULLPAGE_PLACEMENT_ID = 1554430036174L;
     private boolean adLoaded = false;
 
     @Override
@@ -34,7 +36,7 @@ public class SplashScreen extends Activity implements InMobiInterstitial.Interst
         initSdk();
 
 
-        mInterstitialAd = new InMobiInterstitial(SplashScreen.this, 1471550843414L, this);
+        mInterstitialAd = new InMobiInterstitial(SplashScreen.this, FULLPAGE_PLACEMENT_ID, this);
         requestNewInterstitial();
 
         new Handler().postDelayed(new Runnable() {
@@ -76,7 +78,7 @@ public class SplashScreen extends Activity implements InMobiInterstitial.Interst
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        InMobiSdk.init(this, "Insert InMobi Account ID here", consentObject);
+        InMobiSdk.init(this, IN_MOBI_ACCOUNT_ID, consentObject);
     }
 
     private void requestNewInterstitial() {
